@@ -15,7 +15,7 @@ const Report = () => {
     const jwt = localStorage.getItem("authToken");
 
     // Fetch status types from the server
-    axios.get('http://localhost:7004/api/reportone/report/type/get', {
+    axios.get(`${window.location.protocol}//${window.location.hostname}:7004/api/reportone/report/type/get`, {
       headers: {
         'Authorization': `Bearer ${jwt}`,
       }
@@ -28,7 +28,7 @@ const Report = () => {
     });
 
     // Fetch user current status from the server
-    axios.get('http://localhost:7004/api/reportone/user/report/get', {
+    axios.get(`${window.location.protocol}//${window.location.hostname}:7004/api/reportone/user/report/get`, {
       headers: {
         'Authorization': `Bearer ${jwt}`,
       }
