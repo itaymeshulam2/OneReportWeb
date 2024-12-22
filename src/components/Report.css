@@ -1,0 +1,81 @@
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f7fa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    direction: rtl; /* Makes the entire page RTL */
+  }
+  
+  .report-container {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    text-align: center;
+  }
+  
+  .report-header {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .status-selector {
+    margin-bottom: 20px;
+  }
+  
+  .status-label {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 10px;
+    display: block;
+  }
+  
+  .status-dropdown {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    color: black; /* Change text color to black */
+    direction: rtl; 
+  }
+  
+  .status-dropdown:focus {
+    outline: none;
+    border-color: #007bff;
+  }
+  
+  .submit-container {
+    margin-top: 20px;
+  }
+  
+  .submit-button {
+    background-color: #007bff;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  .submit-button:hover {
+    background-color: #0056b3;
+  }
+  
+  .submit-button:active {
+    background-color: #004085;
+  }
